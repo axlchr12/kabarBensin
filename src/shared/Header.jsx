@@ -29,7 +29,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <nav className="p-5 bg-slate-800 border-gray-200 w-full md:w-full lg:w-full 2xl:w-full rounded sm:w-full 5xl:w-full">
+      <nav className="p-3 bg-slate-800 border-gray-200 w-full md:w-full lg:w-full 2xl:w-full rounded sm:w-full 5xl:w-full">
         <div className="container flex flex-wrap justify-center">
           <span className="text-xl font-semibold whitespace-nowrap text-white">
             KabarBens
@@ -77,7 +77,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="kalkulator"
+                  to="/kalkulator"
                   className={
                     location.pathname === '/kalkulator'
                       ? 'menuActive'
@@ -88,7 +88,14 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="menuNotActive">
+                <Link
+                  to="/faq"
+                  className={
+                    location.pathname === '/faq'
+                      ? 'menuActive'
+                      : 'menuNotActive'
+                  }
+                >
                   FAQ
                 </Link>
               </li>

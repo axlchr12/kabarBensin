@@ -25,5 +25,6 @@ Terima kasih kepada renomureza (https://github.com/renomureza/api-berita-indones
 ```
 - [x] Initial
 - [x] Kalkulator Harga
-- [] Kalkulator Liter
+- [x] Kalkulator Liter
+- [x] FAQ
 ```

@@ -13,7 +13,7 @@ const Blog = () => {
   let filteredData =
     dataBerita.length !== 0 &&
     dataBerita.data.posts.filter(item => {
-      return item.description.includes('BBM');
+      return item.thumbnail.includes('bbm');
     });
 
   if (filteredData.length !== 0 || filteredData.length === null) {

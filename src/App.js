@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // Views
 const Home = React.lazy(() => import('./views/Home'));
 const KalkulatorHarga = React.lazy(() => import('./views/KalkulatorHarga'));
+const Faq = React.lazy(() => import('./views/Faq'));
 
 const loading = (
   <div role="status">
@@ -32,7 +33,8 @@ function App() {
       <Suspense fallback={loading}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/kalkulator" element={<KalkulatorHarga />}></Route>
+          <Route path="/kalkulator" element={<KalkulatorHarga />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
       </Suspense>
     </Router>
