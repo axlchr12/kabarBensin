@@ -50,8 +50,7 @@ const Faq = () => {
             </h3>
             <p>
               Data tersebut didapatkan dari situs web resmi untuk Shell dan
-              Pertamina, <br />
-              sedangkan BP dan Vivo didapatkan dari berita resmi yang beredar.
+              Pertamina sedangkan BP dan Vivo didapatkan dari berita resmi yang beredar.
             </p>
             <hr class="w-32 h-1 bg-gray-700 rounded border-0 my-3"></hr>
           </div>
