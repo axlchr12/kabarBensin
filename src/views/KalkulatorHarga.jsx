@@ -6,7 +6,7 @@ const KalkulasiLiter = React.lazy(() => import('./kalkulator/KalkulasiLiter'));
 const KalkulatorHarga = () => {
   const [tipeKalkulator, setTipeKalkulator] = useState('');
   return (
-    <>
+    <div className="container mx-auto">
       <Header />
       <div className="md:flex md:justify-center md:items-start m-10">
         <div className="my-5 md:my-0 md:mx-5 p-5 text-3xl font-semibold text-left text-red-500 bg-slate-200 rounded-lg md:w-2/5">
@@ -63,7 +63,7 @@ const KalkulatorHarga = () => {
           {tipeKalkulator === 'kalkulasiLiter' && <KalkulasiLiter />}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

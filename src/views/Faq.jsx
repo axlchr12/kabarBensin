@@ -2,7 +2,7 @@ import React from 'react';
 const Header = React.lazy(() => import('../shared/Header'));
 const Faq = () => {
   return (
-    <>
+    <div className="container mx-auto">
       <Header />
       <div className="justify-around md:w-6/12 flex items-start flex-wrap m-20">
         <h2 className="text-4xl font-extrabold w-full">FAQs</h2>
@@ -50,13 +50,14 @@ const Faq = () => {
             </h3>
             <p>
               Data tersebut didapatkan dari situs web resmi untuk Shell dan
-              Pertamina sedangkan BP dan Vivo didapatkan dari berita resmi yang beredar.
+              Pertamina sedangkan BP dan Vivo didapatkan dari berita resmi yang
+              beredar.
             </p>
             <hr class="w-32 h-1 bg-gray-700 rounded border-0 my-3"></hr>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
